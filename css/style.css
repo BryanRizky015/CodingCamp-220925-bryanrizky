@@ -47,6 +47,13 @@ nav ul li a {
   padding: 50px;
   background: #f4f4f4;
 }
+.banner img {
+  width: 100%;     
+  height: auto;      
+  max-width: 100%;   
+  display: block;  
+}
+
 section h2{
   text-align: center;
   margin: 20px 0;
@@ -223,3 +230,4 @@ footer {
     text-align: center; /* supaya teksnya rapi di tengah */
   }
 }
+
