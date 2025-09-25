@@ -40,7 +40,11 @@ nav ul li a {
   color: white;
   text-decoration: none;
 }
-
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
 /* Banner */
 .banner {
   text-align: center;
@@ -209,16 +213,17 @@ footer {
   margin-top: 20px;
 }
 
-/* Responsive */
+/* Untuk HP kecil (≤600px) */
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
   }
 }
 
+/* Untuk tablet & HP (≤768px) */
 @media (max-width: 768px) {
   .about-content {
-    flex-direction: column; /* dari horizontal jadi vertikal */
+    flex-direction: column; 
     text-align: center;
   }
 
@@ -227,7 +232,28 @@ footer {
   }
 
   .about-content p {
-    text-align: center; /* supaya teksnya rapi di tengah */
+    text-align: center; 
+  }
+  .navbar ul {
+    display: none; 
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .navbar ul.show {
+    display: flex; 
+  }
+
+  .hamburger {
+    display: block; /
+    font-size: 24px;
+    cursor: pointer;
   }
 }
 
