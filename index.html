@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+  <div class="logo">
+    <img src="img/logo.jpg" alt="logo BYN.VISUAL">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="banner">Home</a></li>
+      <li><a href="#about">Profile</a></li>
+      <li><a href="#contact">massage  up</a></li>
+    </ul>
+  </nav>
+</div>
+
+  <!-- Banner -->
+  <header id="banner" class="banner">
+  <h1 id="welcome"></h1>
+  <p id="subtitle">Welcome to my personal portfolio website</p>
+  <img src="https://picsum.photos/800/200" alt="banner">
+</header>
+
+  <!-- About -->
+  <section id="about" class="about">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <img src="img/me.jpg" alt="foto saya">
+    <p>
+      Hello, my name is <b>Bryan Rizky</b> — a passionate Web Developer, Data Analyst, 
+      and AI Engineer enthusiast. Beyond technology, I have a strong interest in both 
+      two-wheel and four-wheel automotive worlds, as well as photography. This website 
+      represents a blend of my passions, especially in capturing moments from the 
+      Sunday Morning Ride around Senayan City, which I also share on my Instagram 
+      account: <b>BYN.VISUAL</b>.
+    </p>
+  </div>
+</section>
+
+  <main>
+    <h1>My Photography</h1>
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="img/cb.jpg" alt="Foto 1">
+        <div class="card-info">
+          <h3>Nama Foto: CB 1000 R</h3>
+          <p>Device: Sony A6400</p>
+          <p>ISO: 200</p>
+          <p>Shutter Speed: 1/125s</p>
+          <p>Bukaan: f/2.5</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="img/bmw.jpg" alt="Foto 2">
+        <div class="card-info">
+          <h3>Nama Foto: BMW S1000 RR</h3>
+          <p>Device: Sony A6400</p>
+          <p>ISO: 200</p>
+          <p>Shutter Speed: 1/1250s</p>
+          <p>Bukaan: f/2.5</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="img/h2.jpg" alt="Foto 3">
+        <div class="card-info">
+          <h3>Nama Foto: Kawasaki H2</h3>
+          <p>Device: Sony A6400</p>
+          <p>ISO: 200</p>
+          <p>Shutter Speed: 1/120s</p>
+          <p>Bukaan: f/2.5</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Message Us</h2>
+    <form id="messageForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <div id="formResult"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 My Portfolio</p>
+  </footer>
+</body>
+</html>
+.
