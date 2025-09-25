@@ -12,11 +12,6 @@ function WelcomeMessage() {
   }
 }
 window.onload = WelcomeMessage;
-
-
-// ===============================
-// Validasi Form
-// ===============================
 const form = document.getElementById("messageForm");
 const result = document.getElementById("formResult");
 
@@ -27,6 +22,17 @@ form.addEventListener("submit", function(e) {
   const userMessage = document.getElementById("message").value;
   console.log("Name:", userName);
   console.log("Message:", userMessage);
-   alert(`Thank you, ${userName}! Your message: "${userMessage}" has been received.`);
+  alert(`Thank you, ${userName}! Your message: "${userMessage}" has been received.`);
   form.reset();
+});
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".navbar ul");
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
+  if (hamburger.textContent === "☰") {
+    hamburger.textContent = "✖";
+  } else {
+    hamburger.textContent = "☰";
+  }
 });
