@@ -1,0 +1,210 @@
+/* General Style */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #333;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Banner */
+.banner {
+  text-align: center;
+  padding: 50px;
+  background: #f4f4f4;
+}
+section h2{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  color: #333;
+}
+
+main h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  color: #333;
+}
+
+
+/* Section */
+section {
+  padding: 20px;
+}
+h2 {
+  color: #333;
+}
+.about {
+  padding: 40px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* jarak antara foto & teks */
+  margin-top: 20px;
+}
+
+.about-content img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /* bikin bulat */
+  object-fit: cover;
+  border: 3px solid #333; /* opsional biar ada bingkai */
+}
+
+.about-content p {
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* Card Container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card Style */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-info h3 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.card-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+form label {
+  margin-top: 10px;
+}
+form input, form textarea, form button {
+  padding: 8px;
+  margin-top: 5px;
+}
+form button {
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* Form rata tengah */
+#messageForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* center isi form */
+  justify-content: center;
+  margin: 0 auto;        /* center block form */
+  max-width: 400px;      /* batasi lebar form */
+  text-align: center;    /* teks label rata tengah */
+}
+
+/* Input & Textarea lebih rapi */
+#messageForm input,
+#messageForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#messageForm button {
+  margin-top: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#messageForm button:hover {
+  background: #555;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
